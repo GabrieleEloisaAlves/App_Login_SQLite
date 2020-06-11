@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App_Login_SQLite.View.Login" BackgroundColor="LightSeaGreen">
+    <ContentPage.Content>
+       
+            <Grid Padding="10" RowSpacing="1" ColumnSpacing="1" BackgroundColor="White" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="200" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Text="LOGIN" Grid.Column="0" Grid.Row="0"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
+                       FontSize="Large" FontAttributes="Bold"/>
+            <Entry x:Name="txtUsuario" Grid.Column="0" Grid.Row="2"
+                       Placeholder="Usuário" />
+            <Entry x:Name="txtSenha" Grid.Column="0" Grid.Row="3"
+                       Placeholder="Senha"  IsPassword="True"/>
+            <Button Text="ENTRAR"
+                        Grid.Row="4"
+                        Clicked="Button_Clicked_Entrar" />
+            <Button Text="REGISTRAR"
+                        Grid.Row="5"
+                        Clicked="Button_Clicked_Registrar" />
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

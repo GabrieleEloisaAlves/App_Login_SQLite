@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App_Login_SQLite.View.Listar">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Lista de Usuarios" FontSize="Large" TextColor="Black"
+                       HorizontalOptions="CenterAndExpand"
+                       FontAttributes="Bold"/>
+            </StackLayout>
+
+
+            <ListView x:Name="ListaNotas" HasUnevenRows="True" SeparatorColor="Red" Margin="15" BackgroundColor="White">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+
+                                <Label Text="{Binding Nome,StringFormat='Nome:{0}'}" 
+                                       FontSize="Large"/>
+                                <Label Text="{Binding Senha,StringFormat='Senha:{0}'}" 
+                                FontSize="Medium"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

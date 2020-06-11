@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App_Login_SQLite.View.Menu" IsPresented="True">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <Grid BackgroundColor="LightSeaGreen">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="160" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0"
+                             BackgroundColor="Gray"
+                             Padding="10"
+                             Margin="10"
+                             HorizontalOptions="FillAndExpand">
+                    <Label Text="Menu de Ações"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                           TextColor="White"
+                           FontAttributes="Bold"
+                           FontSize="Large"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1"
+                             Spacing="10"
+                             Padding="10"
+                             Margin="10"
+                            BackgroundColor="#F3F2F1">
+                    <Button Text="Home"
+                            Clicked="Open_Home" />
+
+                    <Button Text="Alterar Senha"
+                            Clicked="Open_Senha" />
+
+                    <Button Text="Listar Usuarios"
+                            Clicked="Open_Usuarios" />
+                </StackLayout>
+            </Grid>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+
+        <NavigationPage>
+
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+    </MasterDetailPage>
