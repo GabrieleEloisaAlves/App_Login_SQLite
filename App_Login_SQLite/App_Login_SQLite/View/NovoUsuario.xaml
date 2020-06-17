@@ -6,7 +6,8 @@
              mc:Ignorable="d"
              x:Class="App_Login_SQLite.View.NovoUsuario" Title="Cadastrar Usuário" BackgroundColor="LightSeaGreen">
     <ContentPage.Content>
-        <Grid Padding="5" RowSpacing="1" ColumnSpacing="1" BackgroundColor="White" Margin="20">
+        
+        <Grid Padding="10" RowSpacing="1" ColumnSpacing="1" BackgroundColor="White" Margin="20">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="200" />

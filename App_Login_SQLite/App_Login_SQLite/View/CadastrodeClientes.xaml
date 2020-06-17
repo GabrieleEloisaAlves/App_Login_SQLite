@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App_Login_SQLite.View.CadastrodeClientes" BackgroundColor="LightSeaGreen">
+    <ContentPage.Content>
+ <Grid Padding="5" RowSpacing="1" ColumnSpacing="1" BackgroundColor="White" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblTitulo" Text="NOVO CLIENTE" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"
+                       HorizontalOptions="Center" 
+                   FontSize="Medium" FontAttributes="Bold"/>
+     
+           <StackLayout Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" >
+            <Entry Placeholder="Nome do Cliente" x:Name="txtNome" />
+            <Entry  Placeholder="Endereço" x:Name="txtEndereco"/>
+            <Entry Placeholder="Email" x:Name="txtEmail" />
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Informe a Cidade"  x:Name="txtCidade"  HorizontalOptions="Start"/>
+                <Entry  Placeholder="Estado" x:Name="txtEstado"  HorizontalOptions="EndAndExpand"  />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                    <Entry Placeholder="Informe o Cep" x:Name="txtCep" HorizontalOptions="Start"/>
+                    <Entry Placeholder="Informe o Telefone" x:Name="txtTelefone"  HorizontalOptions="EndAndExpand"  />
+            
+            </StackLayout>
+            </StackLayout>
+        
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2">
+
+                <Button x:Name="btIncluirDados" Text="INCLUIR DADOS"
+                        Clicked="BtIncluirDados_Clicked" 
+                        HorizontalOptions="Center"/>
+ </StackLayout>
+            </Grid>
+  </ContentPage.Content>
+</ContentPage>

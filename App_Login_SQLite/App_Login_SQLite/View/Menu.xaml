@@ -35,6 +35,15 @@
 
                     <Button Text="Listar Usuarios"
                             Clicked="Open_Usuarios" />
+
+                    <Button Text="Cadastrar Cliente"
+                            Clicked="Open_Cliente" />
+
+                    <Button Text="Listar Cliente"
+                            Clicked="Open_Listar" />
+
+                    <Button Text="Sair"
+                            Clicked="Open_Sair" />
                 </StackLayout>
             </Grid>
         </ContentPage>

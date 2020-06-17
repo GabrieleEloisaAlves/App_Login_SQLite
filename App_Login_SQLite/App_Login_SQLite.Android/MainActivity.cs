@@ -19,7 +19,7 @@ namespace App_Login_SQLite.Droid
 
             base.OnCreate(savedInstanceState);
 
-            string dbName = "dbAula.db3";
+            string dbName = "dbLogin.db3";
             string dbPath = AcessoArquivo.GetLocalFilePath(dbName);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);

@@ -68,5 +68,52 @@ namespace App_Login_SQLite.View
             }
 
         }
+
+        private async void Open_Cliente(object sender, EventArgs e)
+        {
+            try
+            {
+                Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(CadastrodeClientes)));
+
+                IsPresented = false;
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops!", ex.Message, "OK");
+            }
+        }
+
+        private async void Open_Listar(object sender, EventArgs e)
+        {
+            try
+            {
+                Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(ListarClientes)));
+
+                IsPresented = false;
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops!", ex.Message, "OK");
+            }
+        }
+
+       
+
+        private async void Open_Sair(object sender, EventArgs e)
+        {
+            try
+            {
+                Menu.usuario = null;await
+                    Navigation.PushAsync(new Login());
+
+                IsPresented = false;
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops!", ex.Message, "OK");
+            }
+        }
+
+
     }
-}
+    }

@@ -23,6 +23,7 @@
                        VerticalOptions="CenterAndExpand"
                        HorizontalOptions="CenterAndExpand"
                        FontSize="Large" FontAttributes="Bold"/>
+                
             <Entry x:Name="txtUsuario" Grid.Column="0" Grid.Row="2"
                        Placeholder="Usuário" />
             <Entry x:Name="txtSenha" Grid.Column="0" Grid.Row="3"

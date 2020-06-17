@@ -113,7 +113,7 @@ public void Alterar(ModelUsuario user)
             try
             {
                 lista = conn.Table<ModelUsuario>().ToList();
-                this.StatusMessage = "Listagem das Notas";
+                this.StatusMessage = "Listagem dos Usuarios";
             }
             catch (Exception ex)
             {

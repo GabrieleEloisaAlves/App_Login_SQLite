@@ -4,29 +4,24 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="App_Login_SQLite.View.Listar">
+             x:Class="App_Login_SQLite.View.ListarClientes" BackgroundColor="LightSeaGreen">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Orientation="Horizontal">
-                <Label Text="Lista de Usuarios" FontSize="Large" TextColor="Black"
-                       HorizontalOptions="CenterAndExpand"
-                       FontAttributes="Bold"/>
+                <Label Text="Lista de Clientes" FontSize="Medium" TextColor="White"
+                       HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
             </StackLayout>
 
 
-            <ListView x:Name="ListaNotas" HasUnevenRows="True" SeparatorColor="Red" Margin="15" BackgroundColor="White">
+            <ListView x:Name="ListaClientes" HasUnevenRows="True" SeparatorColor="Red" Margin="15" BackgroundColor="White">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout>
-
-                                <Label Text="{Binding Id,StringFormat='Codigo:{0}'}" 
-                                       FontSize="Large"/>
-
-                                <Label Text="{Binding Nome,StringFormat='Nome:{0}'}" 
-                                       FontSize="Large"/>
-                                <Label Text="{Binding Senha,StringFormat='Senha:{0}'}" 
-                                FontSize="Medium"/>
+                               
+                                <Label Text="{Binding Nome,StringFormat='Nome:{0}'}" />
+                                <Label Text="{Binding Email,StringFormat='Email:{0}'}" />
+                                <Label Text="{Binding Telefone,StringFormat='Telefone:{0}'}"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
