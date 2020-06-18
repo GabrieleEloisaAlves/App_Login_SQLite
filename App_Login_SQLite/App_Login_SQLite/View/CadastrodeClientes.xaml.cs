@@ -33,7 +33,7 @@ namespace App_Login_SQLite.View
                 user.Cep = txtCep.Text;
                 user.Telefone = txtTelefone.Text;
                 ServicesBDCliente dbCliente = new ServicesBDCliente(App.DbPath);
-                if (btIncluirDados.Text == "Incluir")
+                if (btIncluirDados.Text == "INCLUIR DADOS")
                 {
                     dbCliente.Incluir(user);
                     DisplayAlert("Resultado da operação", dbCliente.StatusMessage, "OK");
@@ -41,8 +41,8 @@ namespace App_Login_SQLite.View
                 else
                 {
                 }
-                MasterDetailPage p = (MasterDetailPage)Application.Current.MainPage;
-                p.Detail = new NavigationPage(new Home());
+               /* MasterDetailPage p = (MasterDetailPage)Application.Current.MainPage;
+                p.Detail = new NavigationPage(new Home()); */
             }
             catch (Exception ex)
             {

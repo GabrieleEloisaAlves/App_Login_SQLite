@@ -9,7 +9,7 @@
  <Grid Padding="5" RowSpacing="1" ColumnSpacing="1" BackgroundColor="White" Margin="20">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
+                <RowDefinition Height="150" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
